@@ -1,0 +1,15 @@
+@media screen and (max-width: 576px) {
+    .col-1{width:15%}
+    .col-2{width:70%}
+    #nav-placeholder-text {
+        display: none;
+    }
+    #external-links-text {
+        display: none;
+    }
+}
+
+.carousel-indicators li {
+    background-color: darkgray;
+}
+

@@ -1,0 +1,119 @@
+.App {
+  text-align: center;
+}
+
+.Orbiter-Image {
+  background-image: url("./assets/images/orbiter.png");
+  background-position: right;
+  background-size: 60%;
+  background-repeat: no-repeat;
+  background-position-y: -120px;
+  background-position-x: 700px;
+}
+
+.body-text {
+  color: darkred;
+  font-size: 26px;
+  background-color: white;
+}
+
+.App-header {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 26px;
+  color: white;
+}
+
+.view {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+}
+
+.App-footer {
+  display: flex;
+  position: sticky;
+  background-color: #282c34;
+  justify-content: left;
+  font-size: 9px;
+  color: white;
+}
+
+.App-link {
+  color: darkred;
+  font-size: 26px;
+}
+
+.App-body {
+  background-color: snow;
+  font-size: medium;
+}
+
+.hidden {
+  visibility: hidden;
+}
+
+.down-nav {
+  flex-direction: column;
+}
+
+.up-nav {
+  flex-direction: column;
+}
+
+.carousel-control-prev{
+  top: 5%;
+}
+
+.carousel-control-next{
+  bottom: 5%;
+}
+
+.tab-color{
+  background: linear-gradient(to right, #302144, #592651 33%, #A53F5B 66%, #EF5966);
+}
+
+.nav-link{
+  color:white;
+}
+
+.carousel-control-prev, .carousel-control-next{
+  filter: invert(1);
+  color: #6F0752;
+  opacity: .7;
+  width: 50px;
+  height: 50px;
+}
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.card-margins {
+  margin: 50px 50px 50px 50px;
+}
+
+
+
+.textmaroon {
+  color: maroon;
+}
+
+.whitebg {
+  background-color: white;
+}
+
+.vertLine {
+  border-left: 6px #A53F5B;
+  height: 500px;
+  position: absolute;
+  left: 50%;
+  margin-left: -3px;
+  top: 0;
+}

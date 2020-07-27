@@ -1,0 +1,84 @@
+{
+  "Thruster":[
+    {
+      "id": 0,
+      "data": "The Psyche Orbiter will use the Stationary Plasma Thruster (SPT) 140, which is a Hall-effect thruster."
+    },
+    {
+      "id": 1,
+      "data": "Four Thrusters are mounted on the chassis and will be operated individually as needed by the navigation system."
+    },
+    {
+      "id": 2,
+      "data": "All four thrusters will be mounted as sets of two on a Dual Axis Positioning Mechanism that will control the general direction of the Orbiter."
+    }
+  ],
+  
+  "Chamber":[
+    {
+      "id": 0,
+      "data" : "The discharge chamber is ceramic and is where the plasma is generated (this is where ionization occurs)."
+    },
+    {
+      "id": 1,
+      "data": "As Xenon passes through the chamber, it collides with high energy electrons and ionizes."
+    },
+    {
+      "id": 2,
+      "data": "The ceramic chamber protects the magnetic coils from the plasma and houses the anode."
+    }
+  ],
+  
+  "Injector": [
+    {
+      "id": 0,
+      "data": "The Propellant Injector is located at the base of the Discharge Chamber and distributes the propellant from the Xenon flow controller."
+    },
+    {
+      "id": 1,
+      "data": "The propellant is injected homogeneously from a metal ring at the base of the discharge channel which also serves as the anode."
+    },
+    {
+      "id": 2,
+      "data": "The anode has a positive bias which accelerates the ions away from it and into space."
+    },
+    {
+      "id": 3,
+      "data": "The Xenon flow rate will change throughout the mission based on the SPT-140 discharge power."
+    },
+    {
+      "id": 4,
+      "data": "Propellant storage is provided by seven composite-overwrapped pressure vessels that are ganged together; each can hold up to 155 kilograms of xenon for a total storage capacity of 1085 kilograms or 2,392 pounds. Requiring the largest total xenon throughput of any space mission flown to date."
+    }
+  ],
+  
+  "Cathode": [
+    {
+      "id": 0,
+      "data": "The Cathode is negatively biased and provides electrons which are attracted to the positively biased anode.  These electrons are caught by the magnetic field in a swirling Hall Current before they can reach the anode."
+    },
+    {
+      "id": 1,
+      "data": "The two different cathode flow fractions are achieved with two distinct sets of flow control orifices specifically designed to provide a cathode-to-anode ratio of 5% when operating at high flow rates, and 9% when operating at low flow rates."
+    },
+    {
+      "id": 2,
+      "data": "Total xenon flow rates will operate at a 7 different throttle points throughout the mission, ranging between 4 mg/sec and 11 mg/sec."
+    },
+    {
+      "id": 3,
+      "data": "Cathode flow rate will change based on the Anode flow rate and will remain at 5% of the Anode flow rate. However, if propulsion power is less than 1.5 kW, the Cathode flow rate will become 9% of the Anode flow rate."
+    }
+  ],
+  
+  "Coils": [
+    {
+    "id" : 0,
+    "data": "The magnetic coils generate the magnetic field which traps the electrons flowing from the cathode to the anode. The swirling cloud of electrons is called a \"Hall Current\", thus giving the Hall Effect Thruster its name. "
+    },
+    {
+      "id" : 1,
+      "data" : "The magnetic coils in the Hall Thruster are protected by the ceramic discharge chamber from the flow of plasma. This protective casing has been omitted in this diagram to make the coils visible. "
+    }
+  ]
+}

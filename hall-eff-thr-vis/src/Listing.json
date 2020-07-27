@@ -1,0 +1,27 @@
+{
+  "Thruster": {
+      "id": "Thruster",
+      "next": "Chamber",
+      "prev": ""
+  },
+  "Chamber": {
+    "id": "Chamber",
+    "next": "Injector",
+    "prev": "Thruster"
+  },
+  "Injector": {
+      "id": "Injector",
+      "next": "Cathode",
+      "prev": "Chamber"
+  },
+  "Cathode": {
+      "id": "Cathode",
+      "next": "Coils",
+      "prev": "Injector"
+  },
+  "Coils": {
+      "id": "Coils",
+      "next": "",
+      "prev": "Cathode"
+  }
+}

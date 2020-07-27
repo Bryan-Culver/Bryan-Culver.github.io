@@ -1,0 +1,21 @@
+.right-nav {
+
+}
+
+.left-nav {
+
+}
+
+.up-nav {
+    padding-bottom: 5px;
+}
+
+.down-nav {
+    padding-top: 5px;
+}
+
+.right-nav .left-nav .up-nav .down-nav {
+    -webkit-user-select: none; /* webkit (safari, chrome) browsers */
+    -moz-user-select: none; /* firefox browsers */
+    -ms-user-select: none; /* IE10+ */
+}
