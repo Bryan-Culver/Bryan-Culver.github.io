@@ -1,0 +1,62 @@
+:root {
+/* global variables*/
+    --banner-height: 13vh;
+    --banner-max-height: 200px;
+    --banner-min-height: 50px;
+}
+
+.Banner{
+    text-align: center;
+    position: sticky;
+    top: 0;
+    width: 100%;
+}
+
+.Banner-logo{
+    animation: Banner-logo-slide ease-in-out;
+    height: auto;
+    width: auto;
+    max-height: var(--banner-max-height);
+    max-width: 6vw;
+    vertical-align: middle;
+    /* minimum size */
+}
+
+.Banner-header {
+    text-align: right;
+    font-weight: bold;
+    background: rgb(255,255,255);
+    background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(223,118,46,1) 35%, rgba(4,16,139,1) 100%);
+    height: var(--banner-height);
+    line-height: var(--banner-height);
+    max-height: var(--banner-max-height);
+    min-height: var(--banner-min-height);
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.Banner-text {
+    text-align: center;
+    font-weight: lighter;
+    font-size: min(4.5vh, var(--banner-max-height));
+    white-space: nowrap;
+    line-height: var(--banner-height);
+}
+
+/* I don't think this is actually used anywhere, candidate for deletion -cwtroy */
+.Banner-link-right{
+    text-align: center;
+    padding-right: 4px;
+}
+
+@keyframes Banner-logo-slide {
+    from{transform: translateX(0px)}
+    to{transform:translateX(100px)}
+}
+
+@media screen and (max-width: 576px) {
+    .Banner-text{
+        font-size: 20px;
+    }
+}

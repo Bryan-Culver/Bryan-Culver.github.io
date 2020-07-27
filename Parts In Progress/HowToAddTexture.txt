@@ -1,0 +1,21 @@
+1. open Blender.
+2. Import .obj file
+3. Zoom out to center object.
+4. Click on object and then hold 'z' and move cursor to material preview.
+5. Open the materials tab on right side of screen.
+6. Click button next to Base Color and select 'Image Texture'
+7. Click on folder icon and navigate to image .jpg.
+8. Scroll down to metallic setting and change to 1.000.
+9. Change roughness value to 0.200.
+10. Change to layout mode using the top tab.
+11. Go to file -> export wavefront (.obj).
+12. Make sure Material groups is selected on the right side.
+13. Change the path mode to Copy and then select Export OBJ.
+14. This will add all the files to the folder path selected.
+
+//Fix Discharge Chamber and Propellant Injector rendering:
+let child;
+for(let i = 0; i < object.children.length; i++) {
+  child = object.children[i];
+  scene.add(new THREE.Mesh(child.geometry, new THREE.MeshPhongMaterial({ color: child.material.color.getHex() })));
+}

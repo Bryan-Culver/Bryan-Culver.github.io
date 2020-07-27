@@ -1,0 +1,97 @@
+{
+  "Applications": [
+    {
+      "imageNo" : 0,
+      "image": "../assets/images/hallthruster2.jpg",
+      "credit": "NASA ID: GRC-2000-C-01122"
+    },
+    {
+      "id": 0,
+      "data": "The Hall-Effect Thruster is commonly used to maintain satellite orbits because of its fuel efficiency (high specific impulse)."
+    },
+    {
+      "id": 1,
+      "data": "As of August 2019, over 150 Hall-effect Thrusters have been successfully launched and operated by Maxar, the company building the Psyche Orbiter."
+    },
+    {
+      "id": 2,
+      "data": "They have also been utilized for materials processing such as ion implantation and ion etching for semiconductor manufacturing."
+    },
+    {
+      "id": 3,
+      "data": "Currently there is research into using these thrusters for deep space probe applications with the Psyche Mission being the first to use a Hall-effect Thruster beyond lunar orbit."
+    }
+  ],
+
+  "PsycheUse": [
+    {
+      "imageNo" : 1,
+      "image": "../assets/images/spacecraft.jpg",
+      "credit": "NASA/JPL-Caltech/Arizona State Univ./Space Systems Loral/Peter Rubin"
+    },
+    {
+      "id": 0,
+      "data": "The Hall Thruster will be used on this mission for an interplanetary cruise from Earth to Psyche."
+    },
+    {
+      "id": 1,
+      "data": "When at Psyche, it will perform transfers between the science orbits at the asteroid."
+    },
+    {
+      "id": 2,
+      "data": "Transfers between the different orbits A to B and B to C require about 3 weeks of thrusting with the final change from Orbit C to D requiring 4.5 months of thrusting."
+    }
+  ],
+
+  "Background": [
+    {
+      "imageNo" : 2,
+      "image": "../assets/images/hallthruster1.jpg",
+      "credit": "NASA Chris Lynch NASA ID: GRC-2015-C-01191"
+    },
+    {
+      "id": 0,
+      "data": "Hall-effect Thrusters were studied both in the United States and Soviet Union in the early 1960s with the first successful propulsion device coming out of the Soviet Union."
+    },
+    {
+      "id": 1,
+      "data": "The first SPT to operate in space, an SPT-50 aboard a Soviet Meteor spacecraft, was launched December 1971."
+    },
+    {
+      "id": 2,
+      "data": "The first use of Hall thrusters on lunar orbit was the European Space Agency lunar mission SMART-1 in 2003."
+    },
+    {
+      "id": 3,
+      "data": "The first flight of an American Hall thruster on an operational mission was the Busek BHT-200, which launched December 2006 on a Department of Defense Space Test Program mission called TACSAT-2."
+    }
+  ],
+
+  "FunFacts": [
+    {
+      "imageNo" : 3,
+      "image": "../assets/images/hallthruster3.jpg",
+      "credit": "NASA ID: GRC-2014-C-08594"
+    },
+    {
+      "id": 0,
+      "data": "The Psyche Mission will be the first mission to use Hall thrusters beyond lunar orbit. "
+    },
+    {
+      "id": 1,
+      "data": "The trade-off for the achievable high exhaust speeds is the low thrust or acceleration. So it can take a very long time for it is reach its final destination."
+    },
+    {
+      "id": 2,
+      "data": "Since Hall thrusters use inert gas for propellant, there are no risks of reactivity with anything else in its feed system as there are with chemical rockets."
+    },
+    {
+      "id": 3,
+      "data": "Hall thrusters are able to accelerate their exhaust to speeds anywhere between 5 and 50 miles per second."
+    },
+    {
+      "id": 4,
+      "data": "Hall thrusters operate on a variety of propellants, the most common being xenon and krypton. Other propellants of interest include argon, bismuth, iodine, magnesium and zinc."
+    }
+  ]
+}
