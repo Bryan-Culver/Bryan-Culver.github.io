@@ -1,0 +1,11 @@
+{
+  "_comment": "3D assets are loaded over HTTP at runtime. Each entry's obj/mtl may be an absolute URL, or a path relative to baseUrl. Override baseUrl at build time with VITE_MODEL_BASE_URL (see .env.example).",
+  "baseUrl": "https://cdn.jsdelivr.net/gh/Bryan-Culver/HallThrusterVis@f73c5139375f9eed3fa5fd32ded1c33545a4f02e/hall-eff-thr-vis/src/assets",
+  "models": {
+    "Thruster": { "obj": "meshes/Assembly.obj",           "mtl": "materials/Assembly.mtl" },
+    "Chamber":  { "obj": "meshes/DischargeChamber.obj",   "mtl": "materials/DischargeChamber.mtl" },
+    "Injector": { "obj": "meshes/Propellant Injector.obj", "mtl": "materials/Propellant Injector.mtl" },
+    "Cathode":  { "obj": "meshes/Cathode.obj",            "mtl": "materials/Cathode.mtl" },
+    "Coils":    { "obj": "meshes/Magnetic Coils.obj",     "mtl": "materials/Magnetic Coils.mtl" }
+  }
+}

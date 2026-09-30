@@ -1,9 +1,20 @@
-.right-nav {
-
+.nav-arrow {
+    color: #0b3d91;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
 }
 
-.left-nav {
+.nav-arrow:hover {
+    color: #3d6fd1;
+    animation: nav-pulse 1s infinite;
+}
 
+@keyframes nav-pulse {
+    from { transform: scale3d(1, 1, 1); }
+    50% { transform: scale3d(1.05, 1.05, 1.05); }
+    to { transform: scale3d(1, 1, 1); }
 }
 
 .up-nav {
@@ -12,10 +23,4 @@
 
 .down-nav {
     padding-top: 5px;
-}
-
-.right-nav .left-nav .up-nav .down-nav {
-    -webkit-user-select: none; /* webkit (safari, chrome) browsers */
-    -moz-user-select: none; /* firefox browsers */
-    -ms-user-select: none; /* IE10+ */
 }
