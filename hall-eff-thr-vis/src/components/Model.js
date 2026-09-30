@@ -2,6 +2,7 @@ import React, { useEffect, useRef, useState } from 'react';
 import * as THREE from 'three';
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls.js';
 import { OBJLoader } from 'three/examples/jsm/loaders/OBJLoader.js';
+import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader.js';
 import { MTLLoader } from 'three/examples/jsm/loaders/MTLLoader.js';
 import { getModelUrls } from '../config/modelUrls';
 
@@ -86,7 +87,8 @@ function Model({ viewId }) {
         let loaded = null;
         setStatus('loading');
 
-        const onObject = (object) => {
+        const onObject = (result) => {
+            const object = result.scene || result; // GLTFLoader returns { scene }
             if (cancelled) { disposeObject(object); return; }
             loaded = object;
             scene.add(object);
@@ -102,7 +104,9 @@ function Model({ viewId }) {
             objLoader.load(urls.obj, onObject, undefined, onError);
         };
 
-        if (urls.mtl) {
+        if (/\.(glb|gltf)(\?|$)/i.test(urls.obj)) {
+            new GLTFLoader().load(urls.obj, onObject, undefined, onError);
+        } else if (urls.mtl) {
             const mtlLoader = new MTLLoader();
             mtlLoader.setResourcePath(urls.resourceUrl);
             mtlLoader.load(urls.mtl, (materials) => {
