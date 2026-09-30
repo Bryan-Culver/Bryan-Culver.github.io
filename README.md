@@ -3,6 +3,15 @@ A web app that demonstrates the Hall Effect Thruster to the general public (ASU 
 
 Developers: Bryan Culver, Cameron Troy, Julio Jovel, Ira Sigman, Kyle Johnson
 
+Live site: https://bryan-culver.github.io/HallThrusterVis/
+
+## Deployment (GitHub Pages)
+
+`.github/workflows/deploy.yml` builds the Vite app and publishes `hall-eff-thr-vis/dist` on every push to `master`.
+One-time setup: repo **Settings > Pages > Build and deployment > Source: GitHub Actions**.
+The build uses a relative `base`, so it works under the `/HallThrusterVis/` sub-path. The root `_config.yml` only
+matters if Pages is switched to "Deploy from a branch" (it stops Jekyll from processing the app sources).
+
 ## Develop
 
 ```

@@ -1,0 +1,18 @@
+# GitHub Pages / Jekyll settings for https://bryan-culver.github.io/HallThrusterVis/
+#
+# The site itself is a Vite + React app built by .github/workflows/deploy.yml and published
+# through GitHub Actions (Settings > Pages > Source: "GitHub Actions"). Jekyll is not used to
+# build it; this file is only read if Pages is ever switched to "Deploy from a branch", in
+# which case it keeps Jekyll from processing the app sources.
+title: Hall Thruster Visualization
+description: Interactive 3D demonstration of the Hall Effect Thruster (ASU / NASA Psyche mission capstone).
+url: https://bryan-culver.github.io
+baseurl: /HallThrusterVis
+
+exclude:
+  - hall-eff-thr-vis
+  - Parts In Progress
+  - package-lock.json
+  - SECURITY.md
+  - LICENSE
+  - node_modules
