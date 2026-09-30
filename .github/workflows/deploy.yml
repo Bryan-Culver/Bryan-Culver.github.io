@@ -37,7 +37,7 @@ jobs:
       - run: npm run build
         env:
           VITE_MODEL_BASE_URL: ${{ vars.MODEL_BASE_URL }}
-      - uses: actions/upload-pages-artifact@v3
+      - uses: actions/upload-pages-artifact@v5
         with:
           path: hall-eff-thr-vis/dist
 
