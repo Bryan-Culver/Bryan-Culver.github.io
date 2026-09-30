@@ -7,7 +7,6 @@ import InfoCard from "./InfoCard/InfoCard";
 import { ForwardNav, BackwardNav } from "./NavControl/NavControl";
 import './HomePageGrid.css';
 import jsonData from '../ComponentInfoFile.json';
-import filenames from '../ComponentFilenames.json';
 import Carousel from "react-bootstrap/Carousel";
 import Card from "react-bootstrap/Card";
 import listing from '../Listing.json';
@@ -41,9 +40,6 @@ class HomePageGrid extends React.Component{
                 }
             }
         }
-
-        // read props to generate model
-        let fName = filenames[viewId];
 
         // read json data for cards
         const loadData = () => JSON.parse(JSON.stringify(jsonData));
@@ -81,7 +77,7 @@ class HomePageGrid extends React.Component{
                     </Col>
 
                     <Col xs={8} md={10} id={"model-view"} className={"align-self-center"}>
-                        <Model filename={fName}/>
+                        <Model viewId={viewId}/>
                     </Col>
 
                     <Col xs={2} md={1} id={"forward-nav-arrow"} className={"align-self-center"}>

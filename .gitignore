@@ -1,0 +1,10 @@
+
+# 3D assets live on external hosting (see README) - don't commit new ones.
+# (Files already tracked, e.g. "Parts In Progress/", are unaffected.)
+hall-eff-thr-vis/**/*.obj
+hall-eff-thr-vis/**/*.mtl
+hall-eff-thr-vis/**/*.glb
+hall-eff-thr-vis/**/*.gltf
+hall-eff-thr-vis/**/*.stl
+hall-eff-thr-vis/**/*.fbx
+hall-eff-thr-vis/**/*.bin

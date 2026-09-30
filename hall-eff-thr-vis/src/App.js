@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from 'react';
-import { StyleRoot } from 'radium';
 import './App.css';
 import Disclaimer from "./components/Disclaimer/Disclaimer";
 import HomePageGrid from './components/HomePageGrid';
@@ -18,14 +17,12 @@ function App() {
         <React.Fragment>
             <div id="outer-container">
                 <Disclaimer />
-                <StyleRoot>
-                    <div id="page-wrap">
-                        <HomePageGrid
-                            viewId={isView}
-                            onChange={(e) => {setIsView(e)}}
-                        />
-                    </div>
-                </StyleRoot>
+                <div id="page-wrap">
+                    <HomePageGrid
+                        viewId={isView}
+                        onChange={(e) => {setIsView(e)}}
+                    />
+                </div>
             </div>
             <FactCards/>
 

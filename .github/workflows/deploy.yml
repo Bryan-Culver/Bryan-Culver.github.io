@@ -1,0 +1,52 @@
+name: Deploy to GitHub Pages
+
+on:
+  push:
+    branches: [master, main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: hall-eff-thr-vis
+    steps:
+      - uses: actions/checkout@v4
+      - name: Fail if 3D assets are committed to the app
+        working-directory: .
+        run: |
+          if git ls-files 'hall-eff-thr-vis/*' | grep -iE '\.(obj|mtl|glb|gltf|stl|fbx)$'; then
+            echo "3D assets must be hosted externally (see README)"; exit 1
+          fi
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+          cache-dependency-path: hall-eff-thr-vis/package-lock.json
+      - run: npm ci
+      - run: npm run build
+        env:
+          VITE_MODEL_BASE_URL: ${{ vars.MODEL_BASE_URL }}
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: hall-eff-thr-vis/dist
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4
