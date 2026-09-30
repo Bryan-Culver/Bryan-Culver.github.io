@@ -21,7 +21,7 @@ jobs:
       run:
         working-directory: hall-eff-thr-vis
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
       - name: Fail if 3D assets are committed to the app
         working-directory: .
         run: |
